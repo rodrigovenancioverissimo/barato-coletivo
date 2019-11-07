@@ -1,0 +1,18 @@
+/* styles for '...' */
+.block-with-text {
+  overflow: hidden;
+  position: relative;
+  /* use this value to count block height */
+  line-height: 1.5rem;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 4.5rem;
+  text-align: justify;
+  height: 100px;
+}
+
+.card{
+  .preco{
+    font-size: 1.3rem;
+    margin-bottom: 10px
+  }
+}
