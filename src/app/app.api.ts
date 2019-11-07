@@ -1,0 +1,1 @@
+export const BC_API = 'https://playground.barato.com.br/desafio-front/api/offers'

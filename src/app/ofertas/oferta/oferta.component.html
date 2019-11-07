@@ -1,0 +1,33 @@
+<div class="container-fluid container-wrapper">
+  <div class="row">
+    <div class="col-md-7">
+      
+    </div>
+    <div class="col-md-5 text-center">
+      <div class="resumo">
+        <h1>Hotel Laong Beach</h1>
+        <p>Lorem ipsum</p>
+        <div class="preco">
+          <small>por apenas:</small>
+          <b>R$ 350,00</b>
+        </div>
+        <a [routerLink]="['/']" class="btn btn-primary">Comprar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div  class="swiper-container" [swiper]="config" [(index)]="index">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      Swiper content
+    </div>
+  </div>
+
+  <div class="swiper-scrollbar"></div>
+
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>

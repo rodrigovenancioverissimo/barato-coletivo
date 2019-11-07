@@ -1,0 +1,18 @@
+.container-wrapper{
+    padding-top: 30px;
+}
+.resumo{
+  h1{
+    margin: 20px 0;
+  }
+  .preco{
+    margin-bottom: 15px;
+    small{
+      display: block;
+      margin-bottom: 5px;
+    }
+    b{
+      font-size: 1.4rem;
+    }
+  }
+}
