@@ -12,4 +12,4 @@
 
 ### Inicializando o Servidor
 
-`ng serve` ou `npm start`
+`ng serve`
