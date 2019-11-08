@@ -11,6 +11,7 @@ import { OfertaComponent } from './ofertas/oferta/oferta.component';
 import { HomeComponent } from './home/home.component';
 import { CardComponent } from './home/card/card.component';
 import { OfertasService } from './ofertas/ofertas.service';
+import { PagamentoComponent } from './pagamento/pagamento.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { OfertasService } from './ofertas/ofertas.service';
     HeaderComponent,
     OfertaComponent,
     HomeComponent,
-    CardComponent
+    CardComponent,
+    PagamentoComponent
   ],
   imports: [
     BrowserModule,

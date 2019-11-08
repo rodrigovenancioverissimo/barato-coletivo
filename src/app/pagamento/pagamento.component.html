@@ -1,0 +1,58 @@
+<div class="container pt-4">
+  <div class="row">
+    <div class="col-7">
+      <form action="/">
+        <div class="row">
+          <div class="col-12">
+            <h2>Pagamento</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <label>Cartão</label>
+            <input type="text" name="" id="" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+          <label>Nome</label>
+          <input type="text" name="" id="" class="form-control">
+          </div>
+    
+        </div>
+        <div class="row">
+            <div class="col-6">
+          <label>Validade</label>
+          <input type="text" name="" id="" class="form-control">
+          </div>
+          <div class="col-6">
+          <label>Código de Segurança</label>
+          <input type="text" name="" id="" class="form-control">
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-12">
+            <button type="submit" class="form-control">
+                <i class="fa fa-money mr-2"></i>Pagar Agora
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-5">
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-12">
+            <h2>Resumo da compra</h2>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-12">
+            Total {{oferta?.price | currency:'BRL':true}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
