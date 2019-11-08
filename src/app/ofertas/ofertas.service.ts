@@ -19,6 +19,8 @@ export class OfertasService {
     }
 
     oferta(id: string): Observable<Oferta>{
-        return this.http.get(`${BC_API}/offer/${id}`).map(response => response.json());
+        return this.http.get(`${BC_API}/offer/${id}`)
+        .map(response => response.json())
+        .catch(ErrorHandler.handleError)
     }
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit, Injectable } from '@angular/core';
 import { OfertasService } from '../ofertas.service';
 import { Oferta } from './oferta.model';
+import { ActivatedRoute } from '@angular/router';
+
 @Component({
   selector: 'bc-oferta',
   templateUrl: './oferta.component.html',
@@ -20,10 +22,11 @@ export class OfertaComponent implements OnInit {
   
   oferta: Oferta;
 
-  constructor(private ofertasService: OfertasService) { }
+  constructor(private ofertasService: OfertasService, 
+              private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.ofertasService.oferta("23186").subscribe(oferta => this.oferta = oferta)
+    this.ofertasService.oferta(this.route.snapshot.params['id']).subscribe(oferta => this.oferta = oferta)
   }
 
 }

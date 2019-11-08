@@ -3,8 +3,8 @@
     <div class="col-6 col-sm-12 col-md-6">
       <div id="carousel_id_1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div *ngFor="let slide of slides; let index = index" [class.active]="index == 0" class="carousel-item">
-            <img [src]="slide" alt="image" class="slide" class="d-block">
+          <div *ngFor="let slide of oferta?.images; let index = index" [class.active]="index == 0" class="carousel-item">
+            <img [src]="slide.url" alt="image" class="slide" class="d-block">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carousel_id_1" role="button" data-slide="prev">
@@ -19,14 +19,19 @@
     </div>
     <div class="col-6 col-sm-12 col-md-6 text-center">
       <div class="resumo">
-        <h1>{{oferta}}</h1>
-        <p>Lorem ipsum</p>
+        <h1>{{oferta?.title}}</h1>
         <div class="preco">
           <small>por apenas:</small>
-          <b>R$ 350,00</b>
+          <b>{{oferta?.price | currency:'BRL':true}}</b>
         </div>
         <a [routerLink]="['/']" class="btn btn-primary">Comprar</a>
       </div>
+    </div>
+  </div>
+  <h2>Detalhes da Oferta</h2>
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-6">
+        <p [innerHTML]="oferta?.description"></p>
     </div>
   </div>
 </div>
