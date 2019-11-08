@@ -1,9 +1,23 @@
-<div class="container-fluid container-wrapper">
+<div class="container container-wrapper">
   <div class="row">
-    <div class="col-md-7">
-      
+    <div class="col-6 col-sm-12 col-md-6">
+      <div id="carousel_id_1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div *ngFor="let slide of slides; let index = index" [class.active]="index == 0" class="carousel-item">
+            <img [src]="slide" alt="image" class="slide" class="d-block">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel_id_1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel_id_1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
     </div>
-    <div class="col-md-5 text-center">
+    <div class="col-6 col-sm-12 col-md-6 text-center">
       <div class="resumo">
         <h1>Hotel Laong Beach</h1>
         <p>Lorem ipsum</p>
@@ -15,19 +29,4 @@
       </div>
     </div>
   </div>
-</div>
-
-<div  class="swiper-container" [swiper]="config" [(index)]="index">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      Swiper content
-    </div>
-  </div>
-
-  <div class="swiper-scrollbar"></div>
-
-  <div class="swiper-pagination"></div>
-
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
 </div>

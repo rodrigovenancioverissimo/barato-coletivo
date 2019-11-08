@@ -16,3 +16,11 @@
     }
   }
 }
+.carousel-item{
+  height: 300px;
+  object-fit: cover;
+  img{
+    height: 100%;
+    min-width: 100%;
+  }
+}

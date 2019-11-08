@@ -10,15 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { OfertaComponent } from './ofertas/oferta/oferta.component';
 import { HomeComponent } from './home/home.component';
 import { CardComponent } from './home/card/card.component';
-import { OfertasService } from './ofertas/ofertas.service'
-
-import { SwiperModule, SwiperConfigInterface } from 'ngx-swiper-wrapper';
-
-const SWIPER_CONFIG: SwiperConfigInterface = {
-  direction: 'horizontal',
-  slidesPerView: 'auto',
-  keyboardControl: true
-};
+import { OfertasService } from './ofertas/ofertas.service';
 
 @NgModule({
   declarations: [
@@ -31,8 +23,7 @@ const SWIPER_CONFIG: SwiperConfigInterface = {
   imports: [
     BrowserModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES),
-    SwiperModule.forRoot(SWIPER_CONFIG)
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [OfertasService],
   bootstrap: [AppComponent]
