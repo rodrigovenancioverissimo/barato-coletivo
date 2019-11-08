@@ -14,5 +14,5 @@ export class AppRoutingModule {}
 
 export const ROUTES: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'oferta_path', component: OfertaComponent}
+  {path: 'oferta/:id', component: OfertaComponent}
 ]

@@ -4,6 +4,6 @@
   <p class="card-text block-with-text" [innerHTML]="oferta.description"></p>
   <div>
     <div class="preco">{{oferta.price | currency:'BRL':true}}</div>
-    <a [routerLink]="['/oferta_path']" class="btn btn-primary d-block">Comprar</a>
+    <a [routerLink]="['/oferta', oferta.id]" class="btn btn-primary d-block">Comprar</a>
   </div>
 </div>

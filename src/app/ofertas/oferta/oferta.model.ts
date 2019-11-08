@@ -6,4 +6,5 @@ export interface Oferta {
     market_price: number;
     category: string;
     image: string;
+    images: string;
 }
