@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Oferta } from '../../oferta/oferta.model'
+import { Oferta } from 'app/ofertas/oferta/oferta.model'
 
 @Component({
   selector: 'bc-card',

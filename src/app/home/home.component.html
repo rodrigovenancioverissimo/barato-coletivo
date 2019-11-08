@@ -3,8 +3,8 @@
 </section>
 
 <section class="content">
-  <div class="card-deck">
-    <div *ngFor="let oferta of ofertas">
+  <div class="card-columns">
+    <div *ngFor="let oferta of ofertas" class="card">
       <bc-card [oferta]="oferta"></bc-card>
     </div>
   </div>

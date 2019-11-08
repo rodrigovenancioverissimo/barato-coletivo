@@ -1,9 +1,6 @@
 import {Injectable} from '@angular/core'
-import {Http} from '@angular/http'
-
 import { Component, OnInit } from '@angular/core';
 
-import {BC_API} from '../app.api'
 import { Oferta } from '../ofertas/oferta/oferta.model'
 import { OfertasService } from '../ofertas/ofertas.service';
 
@@ -21,7 +18,7 @@ export class HomeComponent implements OnInit {
   constructor(private ofertasService: OfertasService) {}
 
   ngOnInit() {
-    this.ofertas = this.ofertasService.ofertas()
+    this.ofertasService.ofertas().subscribe(ofertas => this.ofertas = ofertas)
   }
 
 }
