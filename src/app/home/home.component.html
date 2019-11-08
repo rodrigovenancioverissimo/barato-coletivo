@@ -1,11 +1,11 @@
 <section class="content-header">
-  <h2>Hoteis</h2>
+  <h2>Ofertas</h2>
 </section>
 
 <section class="content">
-  <div class="card-columns">
-    <div *ngFor="let oferta of ofertas" class="card">
-      <bc-card [oferta]="oferta"></bc-card>
+  <div class="row">
+    <div *ngFor="let oferta of ofertas" class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+      <bc-card [oferta]="oferta" class="card"></bc-card>
     </div>
   </div>
 </section>

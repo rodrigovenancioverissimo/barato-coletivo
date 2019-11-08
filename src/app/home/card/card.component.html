@@ -1,7 +1,9 @@
 <img [src]="oferta.image.url" width="100%" height="200">
 <div class="card-body">
-  <h5 class="card-title">{{oferta.title}}</h5>
+  <h5 class="card-title block-with-text-2">{{oferta.title}}</h5>
   <p class="card-text block-with-text" [innerHTML]="oferta.description"></p>
-  <div class="preco">R$ {{oferta.price}},00</div>
-  <a [routerLink]="['/oferta_path']" class="btn btn-primary d-block">Comprar</a>
+  <div>
+    <div class="preco">{{oferta.price | currency:'BRL':true}}</div>
+    <a [routerLink]="['/oferta_path']" class="btn btn-primary d-block">Comprar</a>
+  </div>
 </div>
